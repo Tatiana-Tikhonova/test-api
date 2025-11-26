@@ -1,0 +1,55 @@
+.test-api-block * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+
+.test-api-block__row {
+    margin-top: 0.5rem;
+}
+
+.test-api-item__message {
+    color: red;
+    font-size: 85%;
+}
+
+.test-api-item__button {
+    padding: 0.5rem 1rem;
+    margin: 0 .25rem;
+    border: 2px solid transparent;
+    outline: none !important;
+}
+
+.test-api-item__button[data-color] {
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+.test-api-item__button:hover {
+    border: 2px solid #606060;
+
+}
+
+.test-api-item__button.active {
+    border: 2px solid black;
+}
+
+.test-api-item__button:disabled {
+    opacity: .8;
+}
+
+.test-api-item__button_red,
+.test-api-item__button_red:hover {
+    background: red;
+}
+
+.test-api-item__button_green,
+.test-api-item__button_green:hover {
+    background: green;
+}
+
+.test-api-item__button_yellow,
+.test-api-item__button_yellow:hover {
+    background: yellow;
+}

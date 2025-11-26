@@ -1,0 +1,59 @@
+{
+    "products": {
+        "60": {
+            "combinations": {
+                "red_S": {
+                    "price": 1500,
+                    "stock": 5,
+                    "image": "red-s.jpg",
+                    "available": true
+                },
+                "red_M": {
+                    "price": 1600,
+                    "stock": 0,
+                    "image": "red-m.jpg",
+                    "available": false
+                },
+                "green_S": {
+                    "price": 1700,
+                    "stock": 0,
+                    "image": "green-s.jpg",
+                    "available": false
+                },
+                "green_M": {
+                    "price": 1800,
+                    "stock": 3,
+                    "image": "green-m.jpg",
+                    "available": true
+                },
+                "green_L": {
+                    "price": 2000,
+                    "stock": 8,
+                    "image": "green-l.jpg",
+                    "available": true
+                },
+                "yellow_L": {
+                    "price": 1900,
+                    "stock": 0,
+                    "image": "yellow-l.jpg",
+                    "available": false
+                }
+            },
+            "compatibility": {
+                "red": [
+                    "S",
+                    "M"
+                ],
+                "green": [
+                    "S",
+                    "M",
+                    "L"
+                ],
+                "yellow": [
+                    "S",
+                    "L"
+                ]
+            }
+        }
+    }
+}
