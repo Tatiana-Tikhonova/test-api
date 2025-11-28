@@ -31,18 +31,17 @@ class Test_Api
     public function test_api_enqueue_scripts()
     {
         if (!is_product()) return;
-        wp_enqueue_script('test-api-script', plugin_dir_url(__FILE__) . 'assets/script.js', [], null, [
+        wp_enqueue_script('my-test-api-script', plugin_dir_url(__FILE__) . 'assets/script.js', [], null, [
             'in_footer' => true,
-            'strategy'  => 'async',
         ]);
         $product_id = get_queried_object_id();
-        wp_localize_script('test-api-script', 'testApiScriptData', [
+        wp_localize_script('my-test-api-script', 'testApiScriptData', [
             'ajax_url'  => admin_url('admin-ajax.php'),
             'nonce' => wp_create_nonce('test-api-data'),
             'product_id' => $product_id,
             'defaults' => $this->data_handler->get($product_id),
         ]);
-        wp_enqueue_style('test-api-style', plugin_dir_url(__FILE__) . 'assets/styles.css', [], null);
+        wp_enqueue_style('my-test-api-style', plugin_dir_url(__FILE__) . 'assets/styles.css', [], null);
     }
     public function test_api_ajax_action()
     {

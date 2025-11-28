@@ -9,11 +9,6 @@
     margin-top: 0.5rem;
 }
 
-.test-api-item__message {
-    color: red;
-    font-size: 85%;
-}
-
 .test-api-item__button {
     padding: 0.5rem 1rem;
     margin: 0 .25rem;
